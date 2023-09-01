@@ -56,3 +56,12 @@ body {
       text-align: center;
       }}
   
+
+/*Discord Join Button*/
+.discord-bttn {
+  font-size: 24px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
