@@ -28,6 +28,12 @@
     min-height: 100vh;
     position: relative;
   }
+  /* Enable vertical scrolling for smaller screens */
+@media (max-width: 839px) {
+  body {
+    overflow-y: scroll;
+  }
+}
   /* Header styling */
   header {
     background-color: #007BFF;
@@ -54,22 +60,45 @@ nav li {
   padding: 10px;
   display: inline-block; /* Display the list items inline-block */
 }
+/* Add margin to the bottom of the container */
+.container {
+  padding: 20px;
+  margin-bottom: 100px; /* Adjust this margin based on your footer height */
+}
 
-  /* Container for main content */
-  .container {
-    padding: 20px;
-    margin-bottom: 60px; /* Adjust this margin based on your footer height */
+.container-normal-center {
+  padding: 2% 1%;
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Adjust Discord button size for smaller screens */
+.discord-bttn {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+
+/* Ensure the footer is at the bottom of the viewport on mobile */
+@media screen and (max-width: 600px) {
+  .container-normal-center {
+    padding: 3% 2%; /* Slightly larger padding for smaller screens */
+    font-size: large; /* Larger font size for smaller screens */
   }
-  /* Footer styling */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1px 0;
-  }
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1px 0;
+  /* Use flexbox to keep the footer at the bottom */
+  position: fixed;
+  bottom: 0;
+}
+
 
   /*Discord Join Button*/
 .discord-bttn {
@@ -103,13 +132,12 @@ nav li {
         You must be over the age of 18+ to join our server! <br><br>
         
         BY ENTERING YOU'RE AGREEING TO BEING 18+ AND TO FOLLOW THE DISCORD RULES & GUIDELINES <a href="https://discord.com/guidelines">https://discord.com/guidelines</a></p>
+
+        <h3>Join the ChastityMaze Discord Server!</h3>
+        <p><i>Only 18+</i></p>
+        <a href="https://discord.gg/3dW5vbN" target="_blank"><button class="discord-bttn"><i class='fab fa-discord'></i> Chastity Maze</button></a>
 </div>
 
-  <div class="container-normal-center">
-    <h3>Join the ChastityMaze Discord Server!</h3>
-    <p><i>Only 18+</i></p>
-    <a href="https://discord.gg/3dW5vbN" target="_blank"><button class="discord-bttn"><i class='fab fa-discord'></i> Chastity Maze</button></a>
-  </div>
 
 
   <footer>

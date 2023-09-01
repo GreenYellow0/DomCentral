@@ -36,26 +36,21 @@ body {
       }}
   
   
-  /********************************************************/
-  /* Container Normal Center text*/
+/* Style for centered containers */
+.container-normal-center {
+  padding: 1% 1% 1%; /* You can adjust padding as needed */
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust this margin based on your desired spacing */
+}
+
+@media screen and (max-width: 600px) {
   .container-normal-center {
-    padding-left: 1%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    font-size: medium;
-    text-align: center;
-  
+    padding: 2% 1% 1%; /* Adjust padding as needed for smaller screens */
   }
-  
-  @media screen and (max-width: 600px) {
-    .container-normal-center {
-      padding-left: 2%;
-      padding-bottom: 1%;
-      padding-right: 1%;
-      font-size: medium;
-      text-align: center;
-      }}
-  
+}
+
+
 
 /*Discord Join Button*/
 .discord-bttn {
