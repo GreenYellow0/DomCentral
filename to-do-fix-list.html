@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DomCentral Documentation - Discord</title>
+  <title>DomCentral Documentation - Commands</title>
   <link rel="stylesheet" href="main.css">
   <link rel="icon"  href="IMG/Dominance_Bot.png" sizes="32x32">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -28,12 +28,6 @@
     min-height: 100vh;
     position: relative;
   }
-  /* Enable vertical scrolling for smaller screens */
-@media (max-width: 839px) {
-  body {
-    overflow-y: scroll;
-  }
-}
   /* Header styling */
   header {
     background-color: #007BFF;
@@ -60,34 +54,14 @@ nav li {
   padding: 10px;
   display: inline-block; /* Display the list items inline-block */
 }
-/* Add margin to the bottom of the container */
-.container {
-  padding: 20px;
-  margin-bottom: 100px; /* Adjust this margin based on your footer height */
-}
 
-.container-normal-center {
-  padding: 2% 1%;
-  font-size: medium;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Adjust Discord button size for smaller screens */
-.discord-bttn {
-  font-size: 18px;
-  padding: 10px 20px;
-}
-
-/* Ensure the footer is at the bottom of the viewport on mobile */
-@media screen and (max-width: 600px) {
-  .container-normal-center {
-    padding: 3% 2%; /* Slightly larger padding for smaller screens */
-    font-size: large; /* Larger font size for smaller screens */
+  /* Container for main content */
+  .container {
+    padding: 20px;
+    margin-bottom: 60px; /* Adjust this margin based on your footer height */
   }
-}
 
-/* Footer styling */
+
 footer {
   background-color: #333;
   color: white;
@@ -99,15 +73,20 @@ footer {
   bottom: 0;
 }
 
-
-  /*Discord Join Button*/
-.discord-bttn {
-  font-size: 24px;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-  border: none;
+/* Ensure the footer is at the bottom of the viewport on mobile */
+@media screen and (max-width: 600px) {
+  .container-normal {
+    padding: 3% 2%; /* Slightly larger padding for smaller screens */
+    font-size: large; /* Larger font size for smaller screens */
+  }
 }
+
+.container-normal {
+  padding: 20px; /* Add some padding to the container */
+  margin-bottom: 60px; /* Adjust this margin based on your footer height */
+}
+
+
 </style>
 
 <body>
@@ -126,19 +105,24 @@ footer {
     </ul>
   </nav>
 
-<div class="container-normal-center">
-    <h1>Chastity Maze Discord Server</h1>
-    <p>Welcome to the Chastity Maze Discord server. <br> A place to hang out and chat with other lockees, keyholders and users of ChastiSafe. <br><br>
+  <div class="container-normal">
+    <h2>To-Do-List</h2>
 
-        You must be over the age of 18+ to join our server! <br><br>
-        
-        BY ENTERING YOU'RE AGREEING TO BEING 18+ AND TO FOLLOW THE DISCORD RULES & GUIDELINES <a href="https://discord.com/guidelines">https://discord.com/guidelines</a></p>
+  
 
-        <h3>Join the ChastityMaze Discord Server!</h3>
-        <p><i>Only 18+</i></p>
-        <a href="https://discord.gg/3dW5vbN" target="_blank"><button class="discord-bttn"><i class='fab fa-discord'></i> Chastity Maze</button></a>
+
 </div>
 
+<div class="container-normal">
+    <h2>Bug Fixes</h2>
+    <p>Fixing <code>typo</code> on the <code>/help punishmentroulette options: [short/long/surprise]</code>  removing the surprise option.</p>
+
+  
+
+
+</div>
+
+  
 
 
   <footer>
